@@ -14,6 +14,9 @@ export class BootScene extends Phaser.Scene {
       frameHeight: 40,
     });
 
+
+    this.load.image("panel-bg", "assets/img/panel-bg.png");
+
     this.load.image("tiles", "assets/img/Terrain.png");
 
     this.load.tilemapTiledJSON("map", "./assets/img/level.json");
@@ -57,7 +60,7 @@ export class BootScene extends Phaser.Scene {
 
   
     for (let i = 2; i <= 4; i++) {
-      this.load.image(`cloud-${i}`, `assets/img/cloud-${i}.png`);
+      this.load.image(`cloud-${i}`, `assets/img/c${i-1}.png`);
     }
 
 
